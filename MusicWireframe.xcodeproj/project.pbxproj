@@ -58,13 +58,29 @@
 			children = (
 				4F6BDC512673DBA8003FC1B0 /* AppDelegate.swift */,
 				4F6BDC532673DBA9003FC1B0 /* SceneDelegate.swift */,
-				4F6BDC552673DBA9003FC1B0 /* ViewController.swift */,
 				4F6BDC572673DBA9003FC1B0 /* Main.storyboard */,
+				4F6BDC652673DBB4003FC1B0 /* ViewControllers */,
+				4F6BDC662673DBC4003FC1B0 /* Assets */,
+			);
+			path = MusicWireframe;
+			sourceTree = "<group>";
+		};
+		4F6BDC652673DBB4003FC1B0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4F6BDC552673DBA9003FC1B0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4F6BDC662673DBC4003FC1B0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				4F6BDC5A2673DBA9003FC1B0 /* Assets.xcassets */,
 				4F6BDC5C2673DBA9003FC1B0 /* LaunchScreen.storyboard */,
 				4F6BDC5F2673DBA9003FC1B0 /* Info.plist */,
 			);
-			path = MusicWireframe;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5UNW2D34P;
-				INFOPLIST_FILE = MusicWireframe/Info.plist;
+				INFOPLIST_FILE = MusicWireframe/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5UNW2D34P;
-				INFOPLIST_FILE = MusicWireframe/Info.plist;
+				INFOPLIST_FILE = MusicWireframe/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
