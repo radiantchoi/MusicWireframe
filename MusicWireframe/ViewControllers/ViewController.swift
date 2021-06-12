@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
 }
 
 extension ViewController {
@@ -47,3 +49,18 @@ extension ViewController {
     }
 }
 
+extension ViewController {
+    @IBAction func playPauseButtonTapped() {
+        if isPlaying {
+            UIView.animate(withDuration: 0.5) {
+                self.albumImageView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+            }
+        } else {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.albumImageView.transform = CGAffineTransform.identity
+            })
+        }
+        
+        isPlaying.toggle()
+    }
+}
