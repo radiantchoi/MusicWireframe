@@ -53,17 +53,27 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNs-hf-0kE" userLabel="Reverse Button">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <state key="normal" image="reverse"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="uPw-6C-SBl"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXh-I9-W0X"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOn-xG-a33" userLabel="Play Pause Button">
                                         <rect key="frame" x="120" y="0.0" width="60" height="60"/>
                                         <state key="normal" image="pause"/>
                                         <connections>
                                             <action selector="playPauseButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="cQl-xA-Rw7"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="bRF-fE-WT2"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgA-GU-AKn"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oh2-ff-gCa" userLabel="Forward Button">
                                         <rect key="frame" x="240" y="0.0" width="60" height="60"/>
                                         <state key="normal" image="forward"/>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="OZn-Ki-kbV"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="72Q-sv-ohh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

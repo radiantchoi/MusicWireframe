@@ -27,8 +27,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
-    
 }
 
 extension ViewController {
@@ -62,5 +60,48 @@ extension ViewController {
         }
         
         isPlaying.toggle()
+    }
+    
+    @IBAction func touchedDown(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+    }
+    
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        var buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            buttonBackground.alpha = 0.0
+            buttonBackground.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            sender.transform = CGAffineTransform.identity
+        }) { (_) in
+            buttonBackground.transform = CGAffineTransform.identity
+        }
     }
 }
